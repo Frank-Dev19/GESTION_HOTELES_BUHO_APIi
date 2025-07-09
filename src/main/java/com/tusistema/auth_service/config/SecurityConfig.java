@@ -43,7 +43,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:4200")); // Origen de Angular
+        config.setAllowedOrigins(List.of("https://gestion-hoteles-buho-app-1.onrender.com")); // Origen de Angular
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")); // Métodos permitidos
         config.setAllowedHeaders(List.of("*")); // Headers permitidos (incluye "Authorization")
         config.setAllowCredentials(true); // Permite credenciales (necesario para JWT en cookies)
